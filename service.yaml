@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: xxx
+  labels:
+    xxx: xxx
+spec:
+  ports:
+  - port: xxx
+    targetPort: xxx
+    protocol: xxx
+    nodePort: xxx
+  type: NodePort
+  selector:
+    xxx: xxx

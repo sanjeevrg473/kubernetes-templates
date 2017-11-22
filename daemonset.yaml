@@ -1,0 +1,27 @@
+---
+apiVersion: extensions/v1beta1
+kind: DaemonSet
+metadata:
+  name: xxx
+  namespace: xxx
+  labels:
+    name: xxx
+spec:
+  template:
+    metadata:
+      name: xxx
+      labels:
+        name: xxx
+    spec:
+      containers:
+      - name: xxx
+        image: xxx
+        ports:
+          - containerPort: xxx
+        volumeMounts:
+          - name: xxx
+            mountPath: "/xxx"
+      volumes:
+        - name: xxx
+          hostPath:
+            path: xxx

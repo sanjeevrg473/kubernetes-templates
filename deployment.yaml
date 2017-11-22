@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: xxx
+  labels:
+    name: xxx
+  annotations:
+    xxx: xxx
+spec:
+  replicas: x
+  template:
+    metadata:
+      name: xxx
+      labels:
+        name: xxx
+    spec:
+      containers:
+      - name: xxx
+        image: xxx
+        ports:
+          - containerPort: xx
+

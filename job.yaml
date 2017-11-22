@@ -1,0 +1,22 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: xxx
+  namespace: xxx
+  labels:
+    xxx: xxx
+spec:
+  completions: xx
+  parallelism: xx
+  template:
+    metadata:
+      name: xxx
+      labels:
+        xxx: xxx
+    spec:
+      containers:
+      - name: busybox
+        image: busybox
+        command: ["sh",  "-c", xxx ]
+      restartPolicy: Never

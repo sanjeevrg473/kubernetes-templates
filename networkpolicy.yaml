@@ -1,0 +1,21 @@
+---
+apiVersion: extensions/v1beta1
+kind: NetworkPolicy
+metadata:
+  name: xxx
+  namespace: xxx
+spec:
+  podSelector:
+    matchLabels:
+      xxx: xxx
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels: {}
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              xxx: xxx
+      ports:
+        - port: xxx
+          protocol: xxx
